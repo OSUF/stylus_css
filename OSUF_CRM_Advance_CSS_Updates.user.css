@@ -14,7 +14,7 @@
 * from Oregon State University Foundation.
 *******************************************************************************/
 
-/*
+/* ==UserStyle==
 @name: OSUF_CRM_Advance_CSS_Updates.user.css
 @namespace: https://github.com/OSUF/stylus_css/
 @version: 1.0
@@ -22,7 +22,7 @@
 @Description: CSS fixes for CRM Advance 
 @Author: Vivek Narendra
 @FileID: 6d10f9fd-e8e4-4f89-8aa6-ef2037d73661
-*/
+==/UserStyle== */
 
 /*
 *@Issue: Notes are displaying white on white after chrome update 
