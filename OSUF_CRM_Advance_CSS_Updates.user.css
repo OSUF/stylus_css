@@ -28,17 +28,26 @@
   *@Fix: color black has the correct property set
   */
   .notesWall .notesTextBoxDiv .notesTextBox, .notesWall .notesTextBoxDiv .notesTitleBox {
-  border: 0;
-  vertical-align: baseline;
-  line-height: 18px;
-  width: 100%;
-  height: 20px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-size: 12px;
-  font-family: Segoe UI, Tahoma, Arial;
-  font-weight: normal;
-  color: black;
+    border: 0;
+    vertical-align: baseline;
+    line-height: 18px;
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: Segoe UI, Tahoma, Arial;
+    font-weight: normal;
+    color: black;
+  }
+  
+  /*
+  *@Issue: Long CR' text are locked and users cannot read the full content 
+  *@Fix: Add the necessary scroll bars
+  */
+  .ms-crm-Inline-DynamicGutter .ms-crm-Inline-Value {
+    margin-left: 0px;
+    overflow: auto;
   }
 }
