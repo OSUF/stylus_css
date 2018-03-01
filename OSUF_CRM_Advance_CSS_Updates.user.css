@@ -17,40 +17,32 @@
 @preprocessor stylus
 ==/UserStyle== */
 
-
-/*
-*@Issue: Notes are displaying white on white after chrome update 
-*@Fix: color black has the correct property set
-*/
-.notesWall .notesTextBoxDiv .notesTextBox, .notesWall .notesTextBoxDiv .notesTitleBox {
-border: 0;
-vertical-align: baseline;
-line-height: 18px;
-width: 100%;
-height: 20px;
-margin: 0;
-padding: 0;
-overflow: hidden;
-font-size: 12px;
-font-family: Segoe UI, Tahoma, Arial;
-font-weight: normal;
-color: black;
+@-moz-document domain("stackoverflow.com") {
+	body {
+		color: font-color;
+		background: whitesmoke;
+	}
+	if not affix {
+		body {
+			position: relative;
+		}
+		body > header {
+			position: absolute!important;
+		}
+	}
+	if nav-pos == 'bottom' {
+		body > .container {
+			padding-top: 0!important;
+		}
+		body > footer {
+			padding-bottom: 60px!important;
+		}
+		body > header {
+			top: auto!important;
+			bottom: 0!important;
+		}
+	}
+	body > header {
+		height: nav-height!important;
+	}
 }
-
-
-/*
-*@Issue: Long CR' text are locked and users cannot read the full content 
-*@Fix: Add the necessary scroll bars
-*/
-
-.ms-crm-Inline-DynamicGutter .ms-crm-Inline-Value
-{
-
-margin-left: 0px;
-
-overflow: auto;
-}
-
-/*
-Field| Update Applies to |URL Starts with | https://osufoundationcrm
-*/
