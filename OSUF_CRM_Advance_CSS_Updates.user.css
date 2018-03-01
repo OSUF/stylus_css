@@ -23,27 +23,23 @@
 @author Vivek Narendra
 @FileID 6d10f9fd-e8e4-4f89-8aa6-ef2037d73661
 ==/UserStyle== */
-
-/*
-*@Issue: Notes are displaying white on white after chrome update 
-*@Fix: color black has the correct property set
-*/
-.notesWall .notesTextBoxDiv .notesTextBox, .notesWall .notesTextBoxDiv .notesTitleBox {
-border: 0;
-vertical-align: baseline;
-line-height: 18px;
-width: 100%;
-height: 20px;
-margin: 0;
-padding: 0;
-overflow: hidden;
-font-size: 12px;
-font-family: Segoe UI, Tahoma, Arial;
-font-weight: normal;
-color: black;
+@-moz-document url-prefix("https://osufoundationcrm") {
+  /*
+  *@Issue: Notes are displaying white on white after chrome update 
+  *@Fix: color black has the correct property set
+  */
+  .notesWall .notesTextBoxDiv .notesTextBox, .notesWall .notesTextBoxDiv .notesTitleBox {
+  border: 0;
+  vertical-align: baseline;
+  line-height: 18px;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 12px;
+  font-family: Segoe UI, Tahoma, Arial;
+  font-weight: normal;
+  color: black;
+  }
 }
-
-
-/*
-Field| Update Applies to |URL Starts with | https://osufoundationcrm
-*/
