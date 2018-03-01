@@ -45,18 +45,5 @@ color: black;
 
 
 /*
-*@Issue: Long CR' text are locked and users cannot read the full content 
-*@Fix: Add the necessary scroll bars
-*/
-
-.ms-crm-Inline-DynamicGutter .ms-crm-Inline-Value
-{
-
-margin-left: 0px;
-
-overflow: auto;
-}
-
-/*
 Field| Update Applies to |URL Starts with | https://osufoundationcrm
 */
