@@ -1,0 +1,59 @@
+/******************************************************************************
+*
+* Oregon State University Foundation.
+*
+* Copyright (C) 2018 Oregon State University Foundation. - All Rights Reserved
+* NOTICE:  All information contained herein is, and remains
+* the property of DawsonSoft Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Oregon State University Foundation
+* and its suppliers and may be covered by U.S. and Foreign Patents,
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Oregon State University Foundation.
+*******************************************************************************/
+
+/*
+@Name:OSUF CRM Advance CSS Updates
+@Description: CSS fixes for CRM Advance 
+@Author: Vivek Narendra
+@FileID: 6d10f9fd-e8e4-4f89-8aa6-ef2037d73661
+*/
+
+/*
+*@Issue: Notes are displaying white on white after chrome update 
+*@Fix: color black has the correct property set
+*/
+.notesWall .notesTextBoxDiv .notesTextBox, .notesWall .notesTextBoxDiv .notesTitleBox {
+border: 0;
+vertical-align: baseline;
+line-height: 18px;
+width: 100%;
+height: 20px;
+margin: 0;
+padding: 0;
+overflow: hidden;
+font-size: 12px;
+font-family: Segoe UI, Tahoma, Arial;
+font-weight: normal;
+color: black;
+}
+
+
+/*
+*@Issue: Long CR' text are locked and users cannot read the full content 
+*@Fix: Add the necessary scroll bars
+*/
+
+.ms-crm-Inline-DynamicGutter .ms-crm-Inline-Value
+{
+
+margin-left: 0px;
+
+overflow: auto;
+}
+
+/*
+Field| Update Applies to |URL Starts with | https://osufoundationcrm
+*/
